@@ -195,22 +195,22 @@ function showPage(p){
 
 function quadSVG(anx,avo,showDot){
  const S=360,pad=60,W=S+pad+14,H=S+pad+14;
- const x=v=>pad+(v-1)/6*S, y=v=>14+(7-v)/6*S;
+ const x=v=>pad+(v-1)/6*S, y=v=>14+(v-1)/6*S;
  const mx=x(4),my=y(4);
  const lab=(tx,ty,t,b)=>`<text x="${tx}" y="${ty}" text-anchor="middle" font-size="17" font-weight="800" fill="#1f4f56">${t}</text><text x="${tx}" y="${ty+20}" text-anchor="middle" font-size="12" fill="#5b686e">${b}</text>`;
  let dot='';
  if(showDot){const cx=x(avo),cy=y(anx);dot=`<circle cx="${cx}" cy="${cy}" r="11" fill="#a5574a" stroke="#fff" stroke-width="3"/><text x="${cx}" y="${cy-17}" text-anchor="middle" font-size="13" font-weight="800" fill="#a5574a">나</text>`;}
  const ticks=[1,2,3,4,5,6,7].map(v=>`<text x="${x(v)}" y="${14+S+18}" text-anchor="middle" font-size="12" fill="#5b686e">${v}</text><text x="${pad-10}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#5b686e">${v}</text>`).join('');
  return `<svg viewBox="0 0 ${W} ${H+20}" role="img" aria-label="애착 불안과 애착 회피 4분면">
- <rect x="${pad}" y="14" width="${mx-pad}" height="${my-14}" fill="#f6ece5"/><rect x="${mx}" y="14" width="${pad+S-mx}" height="${my-14}" fill="#f1e6e8"/>
- <rect x="${pad}" y="${my}" width="${mx-pad}" height="${14+S-my}" fill="#e8f0ed"/><rect x="${mx}" y="${my}" width="${pad+S-mx}" height="${14+S-my}" fill="#eceef3"/>
+ <rect x="${pad}" y="14" width="${mx-pad}" height="${my-14}" fill="#e8f0ed"/><rect x="${mx}" y="14" width="${pad+S-mx}" height="${my-14}" fill="#eceef3"/>
+ <rect x="${pad}" y="${my}" width="${mx-pad}" height="${14+S-my}" fill="#f6ece5"/><rect x="${mx}" y="${my}" width="${pad+S-mx}" height="${14+S-my}" fill="#f1e6e8"/>
  <rect x="${pad}" y="14" width="${S}" height="${S}" fill="none" stroke="#c9d1cf"/>
  <line x1="${mx}" y1="14" x2="${mx}" y2="${14+S}" stroke="#7d8b8f" stroke-dasharray="5 4"/><line x1="${pad}" y1="${my}" x2="${pad+S}" y2="${my}" stroke="#7d8b8f" stroke-dasharray="5 4"/>
- ${lab((pad+mx)/2,40,'집착형','불안↑ 회피↓')}${lab((mx+pad+S)/2,40,'공포회피형','불안↑ 회피↑')}
- ${lab((pad+mx)/2,14+S-34,'안정형','불안↓ 회피↓')}${lab((mx+pad+S)/2,14+S-34,'거부회피형','불안↓ 회피↑')}
+ ${lab((pad+mx)/2,40,'안정형','불안↓ 회피↓')}${lab((mx+pad+S)/2,40,'거부회피형','불안↓ 회피↑')}
+ ${lab((pad+mx)/2,14+S-34,'집착형','불안↑ 회피↓')}${lab((mx+pad+S)/2,14+S-34,'공포회피형','불안↑ 회피↑')}
  ${ticks}
  <text x="${pad+S/2}" y="${14+S+40}" text-anchor="middle" font-size="13" font-weight="700" fill="#27323a">애착 회피 →</text>
- <text transform="translate(16 ${14+S/2}) rotate(-90)" text-anchor="middle" font-size="13" font-weight="700" fill="#27323a">애착 불안 →</text>
+ <text transform="translate(12 ${14+S/2}) rotate(90)" text-anchor="middle" font-size="13" font-weight="700" fill="#27323a">애착 불안 →</text>
  ${dot}</svg>`;
 }
 
