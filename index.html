@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#f7f5f0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>나의 성인 애착 유형 알아보기 | 심리학에게 묻다</title>
+<style>
+:root{--bg:#f7f5f0;--white:#fff;--ink:#27323a;--sub:#5b686e;--line:#dedfdd;--teal:#286870;--pale:#e8f0ed;--rose:#a5574a;--shadow:0 8px 32px rgba(19,45,46,.065)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;line-height:1.7;word-break:keep-all;font-size:17px}
+main{max-width:830px;margin:0 auto;padding:26px 20px 70px}
+button,input,textarea{font:inherit}button{cursor:pointer}
+button:focus-visible,textarea:focus-visible{outline:3px solid #88bcc1;outline-offset:2px}
+h1{font-size:clamp(27px,4.2vw,38px);letter-spacing:-.05em;line-height:1.3;margin:10px 0 14px}
+h2{font-size:clamp(22px,3.5vw,28px);letter-spacing:-.04em;margin:0 0 10px}
+h3{font-size:19px;letter-spacing:-.03em;margin:28px 0 10px}
+p{margin:8px 0 15px}.muted{color:var(--sub)}.small{font-size:15px}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.11em;color:var(--teal)}
+.card{background:var(--white);border:1px solid #e9e9e7;border-radius:20px;padding:clamp(22px,4vw,40px);box-shadow:var(--shadow);margin:18px 0}
+.card.compact{padding:23px 25px}
+.callout{background:#eef2f0;border-left:3px solid var(--teal);padding:16px 18px;border-radius:0 12px 12px 0;margin:20px 0}
+.infolist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:20px 0}
+.infolist div{background:#f2f5f3;border-radius:12px;padding:12px 14px;font-weight:700}
+.infolist span{display:block;font-size:13px;font-weight:600;color:var(--sub)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;align-items:center}
+.btn{background:var(--teal);border:1px solid var(--teal);border-radius:12px;color:#fff;padding:13px 24px;font-weight:800;min-height:52px}
+.btn:hover{background:#164b52}
+.btn.secondary{background:#fff;color:var(--teal);border-color:#9cb4b3}.btn.secondary:hover{background:#edf4f2}
+.btn.ghost{background:transparent;color:var(--sub);border-color:transparent}
+.progress{margin:6px 0 22px}
+.progress .bar{height:9px;background:#e1e5e3;border-radius:20px;overflow:hidden}
+.progress .bar i{display:block;height:100%;background:var(--teal);border-radius:20px;transition:width .3s}
+.progress .label{display:flex;justify-content:space-between;font-size:14px;color:var(--sub);margin-top:6px}
+.scale-legend{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;margin:8px 0 6px;font-size:12.5px;text-align:center;color:var(--sub);line-height:1.35}
+.scale-legend b{display:block;font-size:16px;color:var(--ink)}
+.qblock{padding:20px 0;border-top:1px solid #ebece9}.qblock:first-of-type{border-top:0}
+.qblock.missing .qtext{color:var(--rose)}
+.number{font-size:13px;color:var(--teal);font-weight:800}
+.qtext{font-size:18px;font-weight:650;margin:6px 0 14px;line-height:1.6}
+.choices{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.choice{border:1px solid #cfdad7;border-radius:10px;background:#fff;color:#3f5156;min-height:52px;font-weight:800;font-size:18px;padding:0}
+.choice:hover{background:#eef5f2}
+.choice.selected{background:var(--teal);color:#fff;border-color:var(--teal)}
+.ends{display:flex;justify-content:space-between;font-size:13px;color:var(--sub);margin-top:6px}
+.feedback{color:var(--rose);font-weight:700;font-size:15px;min-height:24px;margin-top:8px}
+.scorerow{padding:14px 0 16px;border-bottom:1px solid #eee}
+.scorehead{display:flex;justify-content:space-between;gap:15px;font-weight:800;margin-bottom:8px;font-size:18px}
+.scorehead .val{color:var(--teal);font-variant-numeric:tabular-nums}
+.track{position:relative;height:16px;background:#e6ece9;border-radius:20px;overflow:hidden}
+.fill{height:100%;background:var(--teal);border-radius:20px}
+.track .mid{position:absolute;left:50%;top:0;bottom:0;width:2px;background:rgba(39,50,58,.35)}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--sub);margin-top:4px;font-variant-numeric:tabular-nums}
+.desc{font-size:15px;color:var(--sub);margin-top:8px}
+.quadwrap{max-width:460px;margin:10px auto 0}
+.quadwrap svg{width:100%;height:auto;display:block}
+.typebox{background:var(--pale);border-radius:14px;padding:18px 20px;margin-top:18px}
+.typebox .typename{font-size:20px;font-weight:800;color:#1f4f56;margin-bottom:6px}
+.notice{color:#4d636a;background:#f5f6f5;padding:14px 16px;border-radius:12px;font-size:15px;margin-top:18px}
+.reflect{margin-top:12px}
+.reflect label{display:block;font-weight:750;margin:18px 0 8px}
+.field{width:100%;border:1px solid #c7d3d2;border-radius:11px;padding:13px 14px;background:#fff;color:var(--ink);min-height:84px;resize:vertical}
+.field::placeholder{color:#9ba6aa}
+.print-area{display:none}
+.footer{margin:30px auto;text-align:center;color:var(--sub);font-size:12.5px;line-height:1.6}
+#app{min-height:500px}
+@media(max-width:620px){
+ body{font-size:16px}main{padding:16px 12px 55px}
+ .card{border-radius:16px;padding:22px 16px}
+ .infolist{grid-template-columns:1fr 1fr;gap:8px}
+ .choices{gap:4px}.choice{min-height:48px;font-size:17px;border-radius:9px}
+ .scale-legend{font-size:10.5px;gap:2px}.scale-legend b{font-size:14px}
+ .qtext{font-size:17px}
+ .btn{flex:1;white-space:nowrap;padding:12px 10px}.actions{gap:8px}
+}
+@media print{
+ body{background:#fff;color:#000;font-size:11.5pt}main{max-width:none;padding:0}
+ #app,.footer,.screen-only{display:none!important}.print-area{display:block!important}
+ .print-area h1{font-size:20pt;margin:0 0 4px}.print-area h2{margin:18px 0 6px;font-size:14pt}
+ .print-area p{margin:4px 0}.print-area .quadwrap{max-width:300px;margin:6px 0}
+ .prow{display:flex;gap:14px;align-items:center;margin:5px 0}.prow b{width:110px}
+ .pbar{width:220px;height:9px;background:#ddd}.pbar i{display:block;height:100%;background:#444}
+ .pans{white-space:pre-wrap;border-bottom:1px solid #ccc;padding:4px 0 8px;margin-bottom:6px}
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow screen-only">심리학에게 묻다 · 수업 활동</div>
+  <div id="app" aria-live="polite"></div>
+  <section id="printArea" class="print-area"></section>
+  <div class="footer screen-only">ECR-R(Fraley, Waller, &amp; Brennan, 2000) 36문항을 수업용으로 번역한 문항입니다. 공식 타당화 한국어판이 아닙니다.<br>심리검사나 진단이 아닌 교육용 자기이해 활동이며, 응답과 결과는 서버로 전송되지 않습니다.</div>
+</main>
+<script>
+'use strict';
+const ITEMS=[
+ '나는 연인의 사랑을 잃게 될까 봐 두렵다.',
+ '나는 연인이 나와 계속 함께 있고 싶어 하지 않을까 봐 자주 걱정한다.',
+ '나는 연인이 나를 진심으로 사랑하지 않는 것은 아닐까 자주 걱정한다.',
+ '나는 연인이 내가 그 사람을 아끼는 만큼 나를 아껴 주지 않을까 봐 걱정한다.',
+ '나는 나에 대한 연인의 감정이 그 사람에 대한 나의 감정만큼 강했으면 하고 자주 바란다.',
+ '나는 나의 연인 관계에 대해 걱정을 많이 한다.',
+ '연인이 눈앞에 없을 때, 나는 그 사람이 다른 사람에게 관심을 갖게 될까 봐 걱정한다.',
+ '연인에게 내 감정을 표현할 때, 나는 그 사람이 나와 같은 감정을 느끼지 않을까 봐 두렵다.',
+ '나는 연인이 나를 떠날까 봐 걱정하는 일이 거의 없다.',
+ '나의 연인은 내가 나 자신을 의심하게 만든다.',
+ '나는 버림받을까 봐 걱정하는 일이 별로 없다.',
+ '나는 연인이 내가 원하는 만큼 가까워지려 하지 않는다고 느낀다.',
+ '연인은 때때로 뚜렷한 이유 없이 나에 대한 감정이 변한다.',
+ '아주 가까워지고 싶은 나의 바람 때문에 때때로 사람들이 겁을 먹고 멀어진다.',
+ '나는 연인이 나를 잘 알게 되면 있는 그대로의 나를 좋아하지 않을까 봐 두렵다.',
+ '연인에게서 내가 필요로 하는 애정과 지지를 얻지 못하면 화가 난다.',
+ '나는 내가 다른 사람들에 비해 부족할까 봐 걱정한다.',
+ '나의 연인은 내가 화가 났을 때만 나에게 관심을 기울이는 것 같다.',
+ '나는 마음 깊은 곳의 감정을 연인에게 드러내지 않는 편이 좋다.',
+ '나는 연인에게 나의 개인적인 생각과 감정을 편하게 이야기한다.',
+ '나는 연인에게 의지하는 것을 스스로 허용하기가 어렵다.',
+ '나는 연인과 가까이 지내는 것이 매우 편하다.',
+ '나는 연인에게 마음을 여는 것이 편하지 않다.',
+ '나는 연인과 너무 가까워지지 않는 편이 좋다.',
+ '연인이 나와 아주 가까워지기를 원하면 나는 불편해진다.',
+ '나는 연인과 가까워지는 것이 비교적 쉽다.',
+ '나는 연인과 가까워지는 것이 어렵지 않다.',
+ '나는 대개 나의 문제와 고민을 연인과 의논한다.',
+ '힘들 때 연인에게 기대면 도움이 된다.',
+ '나는 연인에게 거의 모든 것을 이야기한다.',
+ '나는 연인과 여러 가지 일에 대해 함께 이야기를 나눈다.',
+ '나는 연인이 나와 너무 가까워지면 긴장된다.',
+ '나는 연인에게 의지하는 것이 편하다.',
+ '나는 연인에게 의지하는 것이 쉽다.',
+ '나는 연인에게 애정을 표현하는 것이 쉽다.',
+ '나의 연인은 나와 나의 욕구를 정말로 잘 이해한다.'
+];
+/* 공식 채점: 불안 1~18, 회피 19~36 / 역채점 문항(1부터 시작하는 번호) */
+const REVERSED=new Set([9,11,20,22,26,27,28,29,30,31,33,34,35,36]);
+const SCALE=['전혀 그렇지 않다','그렇지 않다','약간 그렇지 않다','보통이다','약간 그렇다','그렇다','매우 그렇다'];
+const PER_PAGE=6, PAGES=6;
+const values=Array(36).fill(null);
+const notes={q1:'',q2:'',q3:''};
+const TYPES={
+ secure:{name:'안정형',text:['가까운 관계에서 친밀감을 비교적 편안하게 경험하는 경향입니다.','상대방을 믿고, 필요할 때 도움이나 지지를 요청하는 것을 크게 어렵게 느끼지 않을 수 있습니다.','관계에 갈등이 생겨도 관계 자체가 무너질 것이라는 걱정에 오래 머물기보다 대화로 다루려는 모습이 나타날 수 있습니다.']},
+ preoccupied:{name:'집착형',text:['친밀한 관계를 매우 중요하게 여기는 경향입니다.','동시에 상대방의 애정이나 관계가 안정적인지에 대한 불안이 높아, 상대의 마음을 반복해서 확인하고 싶어질 수 있습니다.','상대의 작은 반응 변화에도 마음이 크게 움직일 수 있으며, 이는 관계를 지키고 싶은 마음과 연결되어 있습니다.']},
+ dismissing:{name:'거부회피형',text:['관계 안에서도 독립성과 자율성을 중요하게 여기는 경향입니다.','상대방에게 정서적으로 기대거나 속마음을 드러내는 것이 불편하게 느껴질 수 있습니다.','어려운 일이 있을 때 다른 사람에게 의지하기보다 혼자 해결하는 방식을 더 편하게 여길 수 있습니다.']},
+ fearful:{name:'공포회피형',text:['친밀한 관계를 원하면서도, 거절당하거나 상처받는 것에 대한 두려움이 함께 있는 경향입니다.','가까워지고 싶은 마음과 거리를 두고 싶은 마음이 동시에 나타나, 관계에서 다가갔다가 물러서는 모습이 보일 수 있습니다.','상대를 믿고 싶지만 마음을 완전히 열기는 어렵게 느껴질 수 있습니다.']}
+};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function setView(html){$('app').innerHTML=html;window.scrollTo({top:0,behavior:'instant'});}
+
+function score(){
+ const rec=values.map((v,i)=>REVERSED.has(i+1)?8-v:v);
+ const mean=a=>a.reduce((s,x)=>s+x,0)/a.length;
+ return {anx:mean(rec.slice(0,18)),avo:mean(rec.slice(18,36))};
+}
+const fmt=n=>(Math.round(n*100+1e-9)/100).toFixed(2);
+function typeKey(anx,avo){const hA=anx>=4,hV=avo>=4;return hA?(hV?'fearful':'preoccupied'):(hV?'dismissing':'secure');}
+
+function showIntro(){
+ setView(`<div class="card"><div class="eyebrow">성인 애착 · 개인 자기점검</div><h1>나의 성인 애착 유형 알아보기</h1>
+ <p>다음 문항은 연인이나 배우자와의 관계에서 자신이 평소 어떻게 느끼고 행동하는지 알아보기 위한 질문입니다.</p>
+ <p>현재 연인이나 배우자가 있다면 그 관계를, 현재 관계가 없다면 과거의 연인 관계를 떠올리며 답해 주세요.</p>
+ <p>정답은 없으니 자신에게 가장 가까운 답을 선택하면 됩니다.</p>
+ <div class="infolist"><div><span>문항</span>총 36문항</div><div><span>예상 소요 시간</span>약 8~12분</div><div><span>회원가입</span>필요 없음</div><div><span>검사 결과</span>응답자 본인에게만 표시</div></div>
+ <div class="callout">연애 경험이 없거나 응답하기 어렵다면 검사에 참여하지 않아도 괜찮습니다.</div>
+ <div class="actions"><button class="btn" id="start">검사 시작하기 →</button></div></div>`);
+ $('start').onclick=()=>showPage(0);
+}
+
+function legendHTML(){return `<div class="scale-legend" aria-hidden="true">${SCALE.map((s,i)=>`<div><b>${i+1}</b>${s}</div>`).join('')}</div>`;}
+
+function showPage(p){
+ const off=p*PER_PAGE;const answered=values.filter(v=>v!==null).length;
+ const body=ITEMS.slice(off,off+PER_PAGE).map((q,i)=>{const idx=off+i;return `<div class="qblock" id="qb-${idx}"><div class="number">문항 ${idx+1} / 36</div><div class="qtext">${esc(q)}</div>
+ <div class="choices" role="group" aria-label="문항 ${idx+1} 응답">${SCALE.map((s,n)=>`<button class="choice ${values[idx]===n+1?'selected':''}" data-q="${idx}" data-v="${n+1}" aria-pressed="${values[idx]===n+1}" aria-label="${n+1}점 ${s}">${n+1}</button>`).join('')}</div>
+ <div class="ends"><span>전혀 그렇지 않다</span><span>매우 그렇다</span></div></div>`}).join('');
+ setView(`<div class="card"><div class="eyebrow">${p+1} / ${PAGES} 화면</div><h2>연인 관계에서의 나</h2>
+ <div class="progress"><div class="bar"><i id="pbar" style="width:${answered/36*100}%"></i></div><div class="label"><span id="plabel">${answered} / 36 응답</span><span>${p+1} / ${PAGES}</span></div></div>
+ ${legendHTML()}${body}<div class="feedback" id="feedback"></div>
+ <div class="actions"><button class="btn secondary" id="prev">← 이전</button><button class="btn" id="next">${p===PAGES-1?'결과 확인하기':'다음 →'}</button></div></div>`);
+ document.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{
+  const q=+b.dataset.q;values[q]=+b.dataset.v;
+  document.querySelectorAll(`[data-q="${q}"]`).forEach(c=>{const s=c===b;c.classList.toggle('selected',s);c.setAttribute('aria-pressed',String(s));});
+  $('qb-'+q).classList.remove('missing');
+  const a=values.filter(v=>v!==null).length;$('pbar').style.width=(a/36*100)+'%';$('plabel').textContent=a+' / 36 응답';
+  if(!document.querySelector('.qblock.missing'))$('feedback').textContent='';
+ });
+ $('prev').onclick=()=>p===0?showIntro():showPage(p-1);
+ $('next').onclick=()=>{
+  const miss=[];for(let i=off;i<off+PER_PAGE;i++)if(values[i]===null)miss.push(i);
+  if(miss.length){miss.forEach(i=>$('qb-'+i).classList.add('missing'));$('feedback').textContent=`아직 응답하지 않은 문항이 있습니다: ${miss.map(i=>i+1+'번').join(', ')}`;$('qb-'+miss[0]).scrollIntoView({behavior:'smooth',block:'center'});return;}
+  if(p===PAGES-1){if(values.some(v=>v===null)){const first=values.findIndex(v=>v===null);showPage(Math.floor(first/PER_PAGE));return;}showResults();}else showPage(p+1);
+ };
+}
+
+function quadSVG(anx,avo,showDot){
+ const S=360,pad=60,W=S+pad+14,H=S+pad+14;
+ const x=v=>pad+(v-1)/6*S, y=v=>14+(7-v)/6*S;
+ const mx=x(4),my=y(4);
+ const lab=(tx,ty,t,b)=>`<text x="${tx}" y="${ty}" text-anchor="middle" font-size="17" font-weight="800" fill="#1f4f56">${t}</text><text x="${tx}" y="${ty+20}" text-anchor="middle" font-size="12" fill="#5b686e">${b}</text>`;
+ let dot='';
+ if(showDot){const cx=x(avo),cy=y(anx);dot=`<circle cx="${cx}" cy="${cy}" r="11" fill="#a5574a" stroke="#fff" stroke-width="3"/><text x="${cx}" y="${cy-17}" text-anchor="middle" font-size="13" font-weight="800" fill="#a5574a">나</text>`;}
+ const ticks=[1,2,3,4,5,6,7].map(v=>`<text x="${x(v)}" y="${14+S+18}" text-anchor="middle" font-size="12" fill="#5b686e">${v}</text><text x="${pad-10}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#5b686e">${v}</text>`).join('');
+ return `<svg viewBox="0 0 ${W} ${H+20}" role="img" aria-label="애착 불안과 애착 회피 4분면">
+ <rect x="${pad}" y="14" width="${mx-pad}" height="${my-14}" fill="#f6ece5"/><rect x="${mx}" y="14" width="${pad+S-mx}" height="${my-14}" fill="#f1e6e8"/>
+ <rect x="${pad}" y="${my}" width="${mx-pad}" height="${14+S-my}" fill="#e8f0ed"/><rect x="${mx}" y="${my}" width="${pad+S-mx}" height="${14+S-my}" fill="#eceef3"/>
+ <rect x="${pad}" y="14" width="${S}" height="${S}" fill="none" stroke="#c9d1cf"/>
+ <line x1="${mx}" y1="14" x2="${mx}" y2="${14+S}" stroke="#7d8b8f" stroke-dasharray="5 4"/><line x1="${pad}" y1="${my}" x2="${pad+S}" y2="${my}" stroke="#7d8b8f" stroke-dasharray="5 4"/>
+ ${lab((pad+mx)/2,40,'집착형','불안↑ 회피↓')}${lab((mx+pad+S)/2,40,'공포회피형','불안↑ 회피↑')}
+ ${lab((pad+mx)/2,14+S-34,'안정형','불안↓ 회피↓')}${lab((mx+pad+S)/2,14+S-34,'거부회피형','불안↓ 회피↑')}
+ ${ticks}
+ <text x="${pad+S/2}" y="${14+S+40}" text-anchor="middle" font-size="13" font-weight="700" fill="#27323a">애착 회피 →</text>
+ <text transform="translate(16 ${14+S/2}) rotate(-90)" text-anchor="middle" font-size="13" font-weight="700" fill="#27323a">애착 불안 →</text>
+ ${dot}</svg>`;
+}
+
+function barHTML(name,v,desc){return `<div class="scorerow"><div class="scorehead"><span>나의 ${name}</span><span class="val">${fmt(v)} / 7.00</span></div>
+ <div class="track"><div class="fill" style="width:${(v-1)/6*100}%"></div><span class="mid"></span></div>
+ <div class="ticks"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div><div class="desc">${desc}</div></div>`;}
+
+function readScore(v){
+ const d=v-4;
+ if(Math.abs(d)<0.5)return '척도의 중간값(4점) 근처에 있습니다. 어느 한쪽으로 뚜렷하게 기울었다고 보기 어렵습니다.';
+ return d<0?'척도의 중간값(4점)보다 낮은 쪽에 있습니다.':'척도의 중간값(4점)보다 높은 쪽에 있습니다.';
+}
+
+function showResults(){
+ const {anx,avo}=score();const k=typeKey(anx,avo);const t=TYPES[k];
+ const near=Math.abs(anx-4)<0.5||Math.abs(avo-4)<0.5;
+ setView(`<div class="card"><div class="eyebrow">나의 성인 애착 결과</div><h1>두 차원으로 본 나의 애착 경향</h1>
+ <p class="muted">ECR-R은 애착을 <b>애착 불안</b>과 <b>애착 회피</b> 두 차원의 점수로 측정합니다. 각 점수는 1.00~7.00 범위입니다.</p>
+ <h3>① 두 차원 점수</h3>
+ ${barHTML('애착 불안',anx,'점수가 높을수록 관계에서 거절이나 버림받음에 대한 걱정이 높은 경향을 뜻합니다.')}
+ ${barHTML('애착 회피',avo,'점수가 높을수록 가까운 사람에게 정서적으로 의존하거나 친밀감을 표현하는 것을 불편하게 느끼는 경향을 뜻합니다.')}
+ <p class="small muted" style="margin-top:12px">두 점수는 높고 낮음으로 성격의 좋고 나쁨을 평가하는 것이 아닙니다.</p>
+ <h3>② 네 가지 성인 애착 유형</h3>
+ <div class="quadwrap">${quadSVG(anx,avo,true)}</div>
+ <div class="notice">가로축은 애착 회피, 세로축은 애착 불안입니다. 수업용 시각화를 위해 척도의 중간값인 <b>4점</b>을 참고 경계로 사용했습니다(4점 미만은 상대적으로 낮은 쪽, 4점 이상은 상대적으로 높은 쪽). <b>이 4점 경계는 ECR-R의 표준화된 임상적 절단점이 아닙니다.</b></div>
+ <h3>③ 나의 결과와 가장 가까운 애착 유형</h3>
+ <div class="typebox"><div class="typename">이번 응답은 ${t.name}의 특징에 상대적으로 가깝게 나타났습니다.</div>${t.text.map(s=>`<p style="margin:6px 0">${esc(s)}</p>`).join('')}</div>
+ <p class="small muted">유형 설명은 교육용 자기이해를 위한 것이며, 진단이나 고정된 성격 판정이 아닙니다. 애착 경향은 관계와 경험에 따라 달라질 수 있습니다.</p>
+ <h3>④ 결과 해석</h3>
+ <p><b>애착 불안 ${fmt(anx)}점</b> — ${readScore(anx)}</p>
+ <p><b>애착 회피 ${fmt(avo)}점</b> — ${readScore(avo)}</p>
+ ${near?'<div class="notice">점수가 4점 근처에 있으면 4분면의 위치가 조금만 달라져도 다른 유형 쪽으로 표시될 수 있습니다. 이 경우 유형 이름보다 <b>두 차원의 실제 점수</b>를 중심으로 읽어 주세요. 특정 유형의 특징이 뚜렷하게 나타난다고 단정할 수 없습니다.</div>':'<p class="small muted">유형 이름보다 두 차원의 실제 점수가 이 검사가 직접 측정하는 내용입니다.</p>'}
+ <h3>⑤ 자기성찰 질문</h3>
+ <p class="muted small">원하는 경우에만 간단히 적어 보세요. 질문만 읽고 마무리해도 괜찮습니다. 작성한 내용은 이 화면에만 남고 어디에도 전송되지 않습니다.</p>
+ <div class="reflect">
+ <label for="q1">1. 내 결과에서 가장 눈에 들어오는 부분은 무엇인가요?</label><textarea class="field" id="q1" data-n="q1">${esc(notes.q1)}</textarea>
+ <label for="q2">2. 가까운 관계에서 내가 편안함을 느끼는 순간과 불안하거나 부담을 느끼는 순간은 언제인가요?</label><textarea class="field" id="q2" data-n="q2">${esc(notes.q2)}</textarea>
+ <label for="q3">3. 앞으로 가까운 사람과 관계를 맺을 때 내가 조금 다르게 시도해 보고 싶은 행동이 있다면 무엇인가요?</label><textarea class="field" id="q3" data-n="q3">${esc(notes.q3)}</textarea>
+ </div>
+ <div class="actions"><button class="btn secondary" id="edit">← 응답 수정</button><button class="btn" id="print">결과 인쇄·PDF 저장</button><button class="btn ghost" id="reset">처음부터 다시 하기</button></div>
+ <div class="notice">결과 저장 버튼은 기기의 인쇄 화면을 엽니다. 인쇄 화면에서 'PDF로 저장'을 선택하면 파일로 보관할 수 있습니다(기기에 따라 다를 수 있음).</div></div>`);
+ document.querySelectorAll('[data-n]').forEach(el=>el.oninput=()=>notes[el.dataset.n]=el.value);
+ $('edit').onclick=()=>showPage(PAGES-1);
+ $('print').onclick=()=>{$('printArea').innerHTML=printHTML();window.print();};
+ $('reset').onclick=()=>{if(confirm('응답과 작성한 내용을 모두 지우고 처음부터 다시 할까요?'))location.reload();};
+}
+
+function printHTML(){
+ const {anx,avo}=score();const t=TYPES[typeKey(anx,avo)];
+ const pr=(n,v)=>`<div class="prow"><b>${n}</b><span>${fmt(v)} / 7.00</span><span class="pbar"><i style="width:${(v-1)/6*100}%"></i></span></div>`;
+ const ans=(q,a)=>`<p><b>${q}</b></p><div class="pans">${esc(a)||'—'}</div>`;
+ return `<h1>나의 성인 애착 경향</h1><p>심리학에게 묻다 / 수업용 자기이해 활동 (비진단) · ECR-R 36문항 수업용 번역</p>
+ <h2>두 차원 점수</h2>${pr('애착 불안',anx)}${pr('애착 회피',avo)}
+ <h2>4분면 위치</h2><div class="quadwrap">${quadSVG(anx,avo,true)}</div>
+ <p>이번 응답은 ${t.name}의 특징에 상대적으로 가깝게 나타났습니다.</p>
+ <p style="font-size:9.5pt">4점 경계는 수업용 참고 기준이며 ECR-R의 표준화된 임상적 절단점이 아닙니다.</p>
+ <h2>자기성찰</h2>${ans('1. 내 결과에서 가장 눈에 들어오는 부분',notes.q1)}${ans('2. 편안한 순간과 불안·부담을 느끼는 순간',notes.q2)}${ans('3. 다르게 시도해 보고 싶은 행동',notes.q3)}`;
+}
+
+showIntro();
+</script>
+</body>
+</html>
